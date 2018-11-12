@@ -1,0 +1,39 @@
+
+div#muse.frontpagemuse h2 a
+{
+    font-size: 1.5em !important;
+}
+
+h2.musepagefront span
+{
+    font-size: 1.8em !important;
+}
+
+h2.politicstitle,
+div.frontpolitics h2,
+h2.commentpage,
+h2.newspage
+{
+    margin-bottom: 10px;
+}
+
+h2.musepagefront
+{
+    margin-top: 0px !important;
+}
+
+#content
+{
+    clear: left;
+}
+
+div.mainnewsstory
+{
+    width: 640px;
+}
+
+.archives a
+{
+    padding-top: 7px !important;
+}
+

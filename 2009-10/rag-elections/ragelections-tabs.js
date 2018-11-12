@@ -1,0 +1,3 @@
+function changeTab()
+{cat=jQuery(this).attr('id').split('_')[0];jQuery('#cat1_tab').removeClass("active");jQuery('#cat1_box').fadeOut('fast');jQuery('#cat2_tab').removeClass("active");jQuery('#cat2_box').fadeOut('fast');jQuery('#cat3_tab').removeClass("active");jQuery('#cat3_box').fadeOut('fast');jQuery('#'+ cat+'_tab').addClass('active');jQuery('#'+ cat+'_box').fadeIn('fast')}
+jQuery(document).ready(function(){jQuery('#cat1_tab').click(changeTab);jQuery('#cat2_tab').click(changeTab);jQuery('#cat3_tab').click(changeTab);jQuery('#cat1_tab').click();});

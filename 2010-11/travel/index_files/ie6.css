@@ -1,0 +1,82 @@
+
+#searchbox
+{
+    width: 150px;
+}
+
+div#muse.frontpagemuse h2 a
+{
+    font-size: 1.5em !important;
+}
+
+div#frontpagelefttop.frontpageleftcols div.frontpagesection
+{
+    margin: 0 !important;
+}
+
+div.frontpagesection#popular div#popular-arrow
+{
+    display: none;
+}
+
+div#politics.frontpagesection ul.links li
+{
+    width: 160px !important;
+}
+
+#footer
+{
+    margin-bottom: 20px;
+}
+
+.footercolumn
+{
+    width: 315px;
+}
+
+.miniadright
+{
+    position: relative;
+    bottom: 68px;
+}
+
+.pageminiadleft
+{
+    position: relative;
+    right: 50px;
+}
+
+.pageminiadright
+{
+    position: relative;
+    bottom: 68px;
+    left: 290px;
+}
+
+.commentminiadleft
+{
+    position: relative;
+    right: 117px;
+}
+
+.commentminiadright
+{
+    position: relative;
+    bottom: 68px;
+    left: 119px;
+}
+
+ul#ticker-links-shown li
+{
+    position: relative;
+    right: 21px;
+    top: 3px;
+}
+
+div.ticker a.left,
+div.ticker a.right
+{
+    z-index: 43;
+    top: 100px;
+    left: 100px;
+}

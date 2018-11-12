@@ -1,0 +1,408 @@
+/* College Cup mini-site */
+
+h2.collegecuppage
+{
+    border-bottom: 4px solid #ff8a00 !important;
+}
+
+div.frontcollegecup
+{
+    padding: 7px 10px;
+}
+
+div.collegecupleft
+{
+    float: left;
+    width: 485px;
+    margin: 5px 20px 15px 0;
+}
+
+div.leadingstory
+{
+    border-bottom: 1px solid #ddd;
+}
+
+div.leadingstory h3
+{
+    font: bold 2.3em Georgia,serif;
+    letter-spacing: -0.05em;
+    margin: 0;
+}
+
+div.leadingstory img
+{
+    float: left;
+    height: 210px;
+    width: 231px;
+    margin: 8px 10px 10px 0;
+}
+
+div.leftstory,
+div.collegecupleft div.archivepost
+{
+    clear: both;
+    margin: 5px 0;
+    min-height: 140px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+div.leftstory h3,
+div.collegecupleft div.archivepost h3
+{
+    font-size: 1.8em;
+    margin: 12px 0 0;
+    padding-left: 0;
+}
+
+div.leftstory h3 img,
+div.collegecupleft div.archivepost h3 img
+{
+    float: right;
+    margin: 0 0 0 5px;
+    padding: 0 6px;
+}
+
+div.collegecupleft div.archivepost p
+{
+    padding-left: 0;
+}
+
+div.collegecupright
+{
+    float: right;
+    width: 435px;
+    margin: 5px 0 15px 0;
+}
+
+div.collegecupgroups
+{
+    margin: 0 3px 17px;
+    position: relative;
+}
+
+div.collegecuptabs a
+{
+    display: block;
+    float: left;
+    width: 85px;
+    padding: 10px;
+    font-size: 1.4em;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background-color: #f1f1f1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #757575;
+    outline: none;
+}
+
+div.collegecuptabs a.active
+{
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #555;
+}
+
+table.collegecuptable
+{
+    width: 426px;
+    border-collapse: collapse;
+    clear: both;
+}
+
+table.collegecuptable tbody
+{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+table.collegecuptable thead tr th
+{
+    font-weight: bold;
+    border-bottom: 1px solid #bbb;
+    padding: 3px 0;
+}
+
+table.collegecuptable tbody tr td,
+table.collegecuptable thead tr th
+{
+    font-size: 1.3em;
+    text-align: center;
+    width: 32px;
+}
+
+table.collegecuptable tfoot tr td
+{
+    font-size: 1.1em;
+    text-align: center;
+    font-style: italic;
+    padding: 4px 0;
+}
+
+table.collegecuptable .tdteam
+{
+    text-align: left;
+    width: auto;
+}
+
+table.collegecuptable thead tr th
+{
+    background-color: #ececec;
+}
+
+table.collegecuptable tbody tr.rowodd td
+{
+    background-color: #e6e6e6;
+}
+
+table.collegecuptable tbody tr.roweven td
+{
+    background-color: #f8f8f8;
+}
+
+table.collegecuptable thead tr th.tdteam,
+table.collegecuptable tbody tr td a
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+table.collegecuptable tbody tr td a
+{
+    color: #404040;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+table.collegecuptable tbody tr td a:hover
+{
+    color: #000;
+}
+
+div#teamguide div
+{
+    display: none;
+    padding: 10px 15px 2px;
+    border: 10px solid #ddd;
+    background-color: #fff;
+    position: absolute;
+    z-index: 9;
+    width: 380px;
+    left: -430px;
+    top: 0;
+    background-clip: padding-box;
+    border: 10px solid rgba(220, 220, 220, 0.9);
+}
+
+div#teamguide div strong
+{
+    font-size: 1.2em;
+}
+
+div#cctwitter
+{
+    padding: 0 3px 4px;
+}
+
+div#cctwitter div#twtr-widget-1
+{
+    float: left;
+}
+
+div#ccpoll
+{
+    width: 190px;
+    float: left;
+    margin-right: 10px;
+}
+
+div#ccpoll div.wp-polls
+{
+    padding: 0;
+}
+
+div#ccpoll div.wp-polls p
+{
+    font-size: 1.2em;
+}
+
+div#ccpoll div.wp-polls p.choice
+{
+    font-size: 1.1em;
+    margin: 0 0 8px 42px;
+}
+
+div#ccpoll div.wp-polls div.answers
+{
+    width: 160px;
+}
+
+div#ccpoll div.wp-polls div.answers p
+{
+    font-size: 1em;
+    margin: 0;
+}
+
+div#ccpoll div.wp-polls div.answers div.answer
+{
+    background: #D4D4D4;
+}
+
+div#ccpoll div.wp-polls div.answers div.answer p
+{
+    background: #666D7C;
+}
+
+div#ccpoll div.wp-polls div.answers div.answer:nth-child(2n) p
+{
+    background: #5B756C;
+}
+
+div#ccpoll div.wp-polls div.answers div.answer p span
+{
+    text-shadow: 0 0 3px #333333;
+    font-size: 1.1em;
+}
+
+div#ccpoll div.wp-polls div.answers div.answer p span.result
+{
+    display: none;
+}
+
+div.twtr-hd
+{
+    padding: 5px !important;
+}
+
+div.twtr-ft div
+{
+    padding: 4px !important;
+    font-size: 0.9em;
+}
+
+div.twtr-tweet-text p
+{
+    font-size: 1.1em;
+}
+
+div.ccrightbox h3
+{
+    border-bottom: 2px solid #e9e9e9;
+    font-size: 1.8em;
+    margin: 8px 0 0;
+    padding: 0 6px 2px;
+}
+
+div#fixtures
+{
+    padding: 2px 0 5px;
+    clear: both;
+}
+
+div.fixtures-list
+{
+    min-height: 41px;
+    margin: 6px 2px;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    cursor: pointer;
+    clear: both;
+}
+
+div.fixtures-list a
+{
+    display: block;
+    float: left;
+    padding: 2px 0px;
+    margin: 10px 0 0 10px;
+    width: 21px;
+    font-size: 1.6em;
+    text-align: center;
+    color: #080e58;
+    background-color: #fff;
+    outline: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+div.fixtures-list a:hover
+{
+    text-decoration: none;
+}
+
+div.fixtures-list h4
+{
+    margin: 0 45px 0;
+    padding: 4px 0;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    font-weight: normal;
+}
+
+div.fixtures-list ul
+{
+    margin: 0 5px 5px 48px;
+    padding: 0 0 9px;
+    list-style-type: none;
+    display: none;
+    font-size: 1.2em;
+}
+
+div.fixtures-list ul li
+{
+    margin: 3px 0;
+}
+
+div.fixtures-list ul li.daytitle
+{
+    font-weight: bold;
+    margin: 10px 0 3px;
+}
+
+div.fixtures-list ul li.daytitletop
+{
+    margin-top: 0 !important;
+}
+
+div#ffpromo
+{
+    padding: 0 0 3px;
+}
+
+div#ffpromo h3 a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+div#ffpromo h3 a:hover
+{
+    text-decoration: underline;
+}
+
+div#ffpromo img
+{
+    float: right;
+    margin: 15px 15px 0 8px;
+}
+
+div#ffpromo p
+{
+    margin: 5px 10px;
+}
+
+div#ffpodcast
+{
+    padding: 5px 0;
+}
+
+div#ffpodcast img
+{
+    margin: 0 auto;
+    display: block;
+}

@@ -1,0 +1,293 @@
+
+div#travelheader img
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div#travel h2
+{
+    color: #48638C;
+    font-size: 25px;
+    line-height: 25px;
+    border-bottom: 3px solid #7992B7;
+    margin: 0;
+    padding: 0 5px 4px;
+}
+
+div#traveluk h2,
+div#travelcapitals h2
+{
+    
+    margin: 10px 0;
+}
+
+div#travelcapitals h2,
+div#traveleurope h2,
+div#travelvs h2
+{
+    text-align: right;
+}
+
+div#travelvs h2
+{
+    border-bottom: none;
+    border-top: 3px solid #7992B7;
+    padding: 4px 5px 0;
+}
+
+ul.polaroids
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.polaroids li
+{
+    display: inline;
+}
+
+ul.polaroids li a
+{
+    display: block;
+    float: left;
+    color: #111;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    width: 135px;
+    background-color: #FFF;
+    -moz-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);  
+}
+
+div.lte-ie8 ul.polaroids li a
+{
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99939083, M12=0.03489950, M21=-0.03489950, M22=0.99939083, sizingMethod='auto expand') progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=120, Color='#555555');
+    zoom: 1;
+}
+
+ul.polaroids li a:hover
+{
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    transform: rotate(-1deg);  
+}
+
+div.lte-ie8 ul.polaroids li a:hover
+{
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99984770, M12=0.01745241, M21=-0.01745241, M22=0.99984770, sizingMethod='auto expand') progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=120, Color='#555555');
+    zoom: 1;
+}
+
+ul.polaroids li a span
+{
+    font-style: italic;
+    color: #666;
+    font-size: 11px;
+}
+
+ul.polaroids li a div
+{
+    margin-bottom: 5px;
+    height: 115px;
+    width: 135px;
+    background-repeat: no-repeat;
+}
+
+ul.polaroids li:nth-child(2n) a
+{
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);  
+}
+
+div.lte-ie8 ul.polaroids li.oddchild a
+{
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99939083, M12=-0.03489950, M21=0.03489950, M22=0.99939083, sizingMethod='auto expand') progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=120, Color='#555555');
+    zoom: 1;
+}
+
+ul.polaroids li:nth-child(2n) a:hover
+{
+    -moz-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    transform: rotate(1deg);  
+    zoom: 1;
+}
+
+div.lte-ie8 ul.polaroids li.oddchild a:hover
+{
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99984770, M12=-0.01745241, M21=0.01745241, M22=0.99984770, sizingMethod='auto expand') progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=120, Color='#555555');
+    zoom: 1;
+}
+
+div#traveluk,
+div#travelcapitals,
+div#travelfor,
+div#travelvs
+{
+    float: left;
+    width: 470px;
+    margin-bottom: 20px;
+}
+
+div#traveluk,
+div#travelfor
+{
+    margin-right: 20px;
+}
+
+div#travelmorocco
+{
+    float: left;
+    margin: 14px 0 0 11px;
+}
+
+div#traveleurope
+{
+    float: right;
+}
+
+div#travelfor,
+div#travelvs
+{
+    margin-top: 15px;
+}
+
+div#travelfor a,
+div#travelvs a
+{
+    display: block;
+    margin: 3px 0;
+    height: 250px;
+    width: 470px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div#travelfor a
+{
+    background-position: 0px 0px;
+}
+
+div#travelvs a
+{
+    background-position: -470px 0px;
+}
+
+div#travelfor a span,
+div#travelvs a span
+{
+    display: inline-block;
+    padding: 5px 8px;
+    color: #333;
+    background-color: #F7F7F7;
+    background-color: rgba(255, 255, 255, 0.65);
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+    position: absolute;
+}
+
+div#travelfor a:hover span,
+div#travelvs a:hover span
+{
+    text-decoration: none;
+    color: #111;
+    background-color: #FEFEFE;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 2px #BBB;
+}
+
+div#travelfor a span
+{
+    width: 140px;
+}
+
+span#travelfor-event,
+span#travelvs-bank
+{
+    text-align: right;
+    right: 0;
+}
+
+span#travelfor-food,
+span#travelvs-less
+{
+    bottom: 0;
+}
+
+span#travelfor-food
+{
+    text-align: center;
+    left: 157px;
+}
+
+span#travelvs-bank
+{
+    width: 115px;
+}
+
+span#travelvs-less
+{
+    width: 143px;
+}
+
+div#travelcredits
+{
+    clear: both;
+    margin: 10px 0 0 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFFCBF;
+    font-size: 10px;
+    line-height: 13px;
+}
+
+ul#travelmore
+{
+    clear: both;
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0 14px;
+}
+
+ul#travelmore li
+{
+    display: inline;
+    width: 125px;
+    margin: 0 4px;
+}
+
+ul#travelmore li a
+{
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 125px;
+    padding-top: 108px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #002277;
+}
+
+ul#travelmore li a:hover
+{
+    color: #D60A60;
+}

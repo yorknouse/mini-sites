@@ -1,0 +1,22 @@
+jQuery(function(){var transitionTime=5000;var apiCall="/wp-content/plugins/flickr-slideshow/flickr-slideshow.php?"
+jQuery("div.slideshow").each(function(){var slideshow=jQuery(this);slideshow.html('');var photos=[];var currentImage=-1;var allowAutomaticTransitions=true;var pauseAutomaticTransitions=false;var timer;var params=slideshow.attr('title').split(' ');var flickrTag=params[0];var size=false;var layout=false;var extras=false;var limit=false;var start=false;var end=false;var dates='';for(var i=0;i<params.length;i++){var split=params[i].split('=');if(split[0]=='size'){var size=split[1];}else if(split[0]=='layout'){var layout=split[1];}else if(split[0]=='extras'){var extras=split[1];}else if(split[0]=='limit'){var limit=split[1];}else if(split[0]=='start'){var start=split[1];}else if(split[0]=='end'){var end=split[1];}}
+if(start&&end){dates='&start='+start+'&end='+end;}
+jQuery.getJSON(apiCall+'tag='+ flickrTag+ dates,function(data){slideshow.removeAttr("title");photos=data.photos.photo;if((extras=='attachments')&&(jQuery('#comment_post_ID').val())){jQuery.getJSON(apiCall+'attachments='+ jQuery('#comment_post_ID').val(),function(data){photos=photos.concat(data.photos.photo);});}
+if(limit){photos.length=limit;}
+if(photos.length==0){return;}
+slideshow.addClass('a_slideshow'+(size?' a_slideshow_'+size:''));slideshow.append(jQuery('<img/>'));button=jQuery('<p class="button"><a href="#">&laquo;</a></p>').appendTo(slideshow);button.fadeTo(0,0.4);button.click(function(){allowAutomaticTransitions=false;transitionBackwards();return false;});button=jQuery('<p class="button"><a href="#">&raquo;</a></p>').appendTo(slideshow);button.css('left',slideshow.width()- button.width()- 30);button.fadeTo(0,0.4);button.click(function(){allowAutomaticTransitions=false;transitionForwards();return false;});if(layout=='thumbs'){jQuery(buildThumbs()).insertAfter(slideshow);}
+slideshow.hover(function(){pauseAutomaticTransitions=true;slideshow.find("p.button").fadeIn();},function(){pauseAutomaticTransitions=false;slideshow.find("p.button").fadeOut();});autoTransition();});function autoTransition(){if(!allowAutomaticTransitions)
+return;if(!pauseAutomaticTransitions)
+transitionForwards();timer=setTimeout(autoTransition,transitionTime);}
+function transitionForwards(){currentImage++;if(currentImage>=photos.length)
+currentImage=0;nextImage(currentImage);}
+function transitionBackwards(){currentImage--;if(currentImage<0)
+currentImage=photos.length- 1;nextImage(currentImage);}
+function flickrUrlToLarger(photo){if(photo.is_public=='yes'){return photo.full;}else{if(size=='large'){return photo.url_s.replace(/_m/,'_z');}else{return photo.url_s.replace(/_m/,'');}}}
+function flickrUrlToThumb(photo){if(photo.is_public=='yes'){return photo.thumbnail;}else{return photo.url_s.replace(/_m/,'_s');}}
+function resize(image){if(image.width()>slideshow.innerWidth()){image.height(image.height()*(slideshow.innerWidth()/image.width()));image.width(slideshow.innerWidth());}
+if(image.height()>slideshow.innerHeight()){image.width(image.width()*(slideshow.innerHeight()/image.height()));image.height(slideshow.innerHeight());}}
+function nextImage(imagesIndex){var image=slideshow.find('img');var new_image=jQuery('<img/>');new_image.get(0).onload=function(){resize(new_image);new_image.css('top',(slideshow.innerHeight()- new_image.height())/2).css('left',(slideshow.innerWidth()- new_image.width())/2).fadeIn('slow',function(){jQuery('div.a_slideshow_thumbs a').removeClass('activep');jQuery('#slideshowimg-'+imagesIndex).addClass('activep');});image.fadeOut("slow",function(){image.remove();});};slideshow.prepend(new_image);new_image.attr('src',flickrUrlToLarger(photos[imagesIndex])).attr('title',photos[imagesIndex].title);}
+function buildThumbs(){var thumbs='<div class="a_slideshow_thumbs">';for(var i=0;i<photos.length;i++){thumbs+='<a href="#'+i+'" id="slideshowimg-'+i+'"><img src="'+flickrUrlToThumb(photos[i])+'" /></a>';}
+thumbs+='</div><div style="clear:both;"></div>';return thumbs;}
+jQuery('div.a_slideshow_thumbs a').live('click',function(){clearTimeout(timer);timer=setTimeout(autoTransition,transitionTime);currentImage=jQuery(this).attr('id').split('-')[1];nextImage(currentImage);return false;});});});
