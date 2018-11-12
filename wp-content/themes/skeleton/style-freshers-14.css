@@ -1,0 +1,157 @@
+/* category-freshers */
+
+#content h1,
+#content h2,
+#content h3,
+#content h4 {
+    font-family: "Graduate", Georgia, serif;
+}
+
+body.category-freshers h1 {
+    border-bottom: 4px solid;
+    padding-bottom: 4px;
+    margin: 0 0 6px;
+}
+
+body.category-freshers h2 {
+    font-size: 24px;
+    color: #2B4988;
+    border-bottom: 2px solid;
+    padding-bottom: 4px;
+    margin: 12px 0 0;
+}
+
+.overlay {
+    display: block;
+    position: relative;
+}
+
+body.category-freshers .overlay {
+    margin: 6px 0 12px;
+}
+
+.overlay h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    /*background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,0.75)));*/
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+    background-image: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+    background-image: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+    padding: 8px 9px;
+    padding-top: 27px;
+}
+
+.overlay:hover h3 {
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+    background-image: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+    background-image: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+}
+
+.overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay.light h3 {
+    color: #000;
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(255,255,255,0.8));
+    background-image: -moz-linear-gradient(rgba(0,0,0,0),rgba(255,255,255,0.8));
+    background-image: -o-linear-gradient(rgba(0,0,0,0),rgba(255,255,255,0.8));
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(255,255,255,0.8));
+}
+
+.overlay.light:hover h3 {
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(255,255,255,1));
+    background-image: -moz-linear-gradient(rgba(0,0,0,0),rgba(255,255,255,1));
+    background-image: -o-linear-gradient(rgba(0,0,0,0),rgba(255,255,255,1));
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(255,255,255,1));
+}
+
+.overlay.light p {
+    color: #000;
+    background: rgba(255,255,255,0.8);
+}
+
+/* single-freshers-map.php */
+
+.entry-content #map {
+    display: block;
+    height: 300px;
+}
+
+.map-big {
+    height: 400px;
+    height: 80vh;
+}
+
+.leaflet-popup-content {
+    font-family: "Graduate", Georgia, serif;
+    font-size: 18px;
+}
+
+#places-list {
+    font-family: "Graduate", Georgia, serif;
+    margin-right: 10px;
+    text-align: right;
+    border-top: 1px dotted #d6d6d6;
+}
+
+#places-list li:before {
+    display: none;
+}
+
+#places-list li a {
+    display: block;
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 24px;
+    border-bottom: 1px dotted #d6d6d6;
+}
+
+#places-list li a.active {
+    color: #1a1a1a;
+}
+
+@media only screen and (max-width: 767px) {
+    #places-list {
+        text-align: center;
+        overflow: hidden;
+    }
+    #places-list li {
+        display: inline;
+    }
+    #places-list a {
+        width: 50%;
+        float: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .eight.columns > .overlay h3 {
+        font-size: 24px;
+    }
+}
+
+#places-content > div {
+    display: none;
+}
+
+#places-content > .active {
+    display: block;
+}
+
+div#map,
+#map div {
+    display: block;
+}
+

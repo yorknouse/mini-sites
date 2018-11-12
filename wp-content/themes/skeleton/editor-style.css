@@ -1,0 +1,224 @@
+/*
+stylesheet for the visual post editor (tinymce)
+
+mostly copied and pasted from style.css, which is bad (there should be should be a single file)
+*/
+
+body {
+    font-family: Georgia, "Bitstream Charter", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    width: 640px;
+    margin: 0 20px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #181818;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.single h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+a {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+a:active {
+    color: black;
+}
+
+p {
+    margin: 1em 0;
+}
+
+p img {
+    margin: 0;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+small {
+    font-size: 80%;
+}
+
+cite {
+    border: 0;
+}
+
+.alignright {
+    float: right;
+    margin-left: 20px;
+    margin-right: -10px;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 20px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 1em auto;
+}
+
+.alignright, .alignleft {
+    margin-top: 0;
+    margin-bottom: 1em;
+
+}
+
+.alignnone, .size-large {
+    float: none;
+    display: block;
+    margin: 1em 0;
+}
+
+.wp-caption {
+    border: 0;
+    padding: 0;
+    background: none;
+    text-align: left;
+}
+
+.wp-caption img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.wp-caption-dd { /* equivalent to .wp-caption-text */
+    margin-top: 6px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+}
+
+blockquote {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #777;
+    margin: 20px 0;
+    padding: 0;
+}
+
+blockquote.left,
+blockquote.right { /* mostly older articles */
+    width: 220px;
+}
+
+blockquote.left {
+    float: left;
+    margin: 0 20px 20px 0;
+
+}
+
+blockquote.right {
+    float: right;
+    margin: 0 0 20px 20px;
+
+}
+
+/* big fancy quotation marks */
+
+blockquote:before,
+blockquote:after {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    color: #d6d6d6;
+    display: block;
+    height: 30px;
+}
+
+blockquote:before {
+    content: '“';
+    margin-bottom: -16px;
+}
+
+blockquote:after {
+    content: '”';
+    margin-top: -18px;
+}
+
+hr {
+    border: dotted #d6d6d6;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 15px 0;
+    height: 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+ol {
+    list-style: decimal outside;
+}
+
+ul, ol {
+    margin: 16px 0;
+}
+
+li {
+    margin: 0;
+}
+
+ul li:before {
+    content: "•";
+    font-size: 30px;
+    display: inline-block;
+    width: 18px;
+    top: 3px;
+    line-height: 16px;
+    position: relative;
+    color: #ccc;
+}
+
+ol li {
+    list-style: decimal outside;
+    margin-left: 22px;
+}

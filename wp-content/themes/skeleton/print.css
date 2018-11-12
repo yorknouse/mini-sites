@@ -1,0 +1,170 @@
+.site-header,
+#navigation,
+.entry-social,
+.entry-meta img,
+.related-posts,
+.entry-social,
+.entry-ad,
+#respond,
+.comment-reply-link,
+.vote,
+#sidebar,
+.footer-ad,
+.site-footer-outer {
+    display: none;
+}
+
+body {
+    font: 12pt/18pt Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+}
+
+#page {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#content {
+    width: auto;
+}
+
+h1, h2, h3, h4, h5, .subhead {
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+h1 {
+    font-size: 27pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+h3 {
+    font-size: 20pt;
+}
+
+h4, .subhead {
+    font-size: 14pt;
+}
+
+a {
+    color: #666;
+    text-decoration: underline;
+}
+
+a:after {
+    content: " (" attr(href) ")";
+    text-decoration: none !important;
+}
+
+a[href^="https://www.nouse.co.uk"]:after,
+a[href^="http://www.nouse.co.uk"]:after {
+    display: none;
+}
+
+.entry-meta, .wp-caption-text {
+    margin: 0;
+    font-size: 9pt;
+    color: #666;
+}
+
+.entry-meta {
+    border: 1pt dotted #ccc;
+    border-left: 0;
+    border-right: 0;
+    padding: 3pt 0;
+}
+
+.entry-content img {
+    max-width: 100% !important;
+    height: auto;
+}
+
+.alignright {
+    float: right;
+    margin-left: 20px;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 20px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 12pt auto;
+}
+
+.alignright,
+.alignleft {
+    margin-bottom: 12pt;
+}
+
+.alignnone,
+.size-large /* some editors accidentally float images that are full-width */ {
+    float: none;
+    display: block;
+    margin: 12pt 0;
+}
+
+/* Blockquotes */
+
+blockquote {
+    font-size: 14pt;
+    line-height: 1.4;
+    color: #666;
+    margin: 14pt 0;
+    padding-left: 12pt;
+    border-left: 1pt solid #ccc;
+}
+
+blockquote.left,
+blockquote.right {
+    width: 220px;
+    border: 0;
+    padding: 0;
+}
+
+blockquote.left {
+    float: left;
+    margin: 0 20px 20px 0;
+
+}
+
+blockquote.right {
+    float: right;
+    margin: 0 0 20px 20px;
+
+}
+
+    blockquote.left:before,
+    blockquote.left:after,
+    blockquote.right:before,
+    blockquote.right:after {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 60px;
+        color: #d6d6d6;
+        display: block;
+        height: 30px;
+    }
+    
+    blockquote.left:before,
+    blockquote.right:before {
+        content: '“';
+        margin-bottom: -16px;
+    }
+    
+    blockquote.left:after,
+    blockquote.right:after {
+        content: '”';
+        margin-top: -18px;
+    }
+
+.flickr-slideshow {
+    display: none;
+}
