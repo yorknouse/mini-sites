@@ -1,0 +1,28 @@
++-----+---------------------------------+------+
+| id  | name                            | year | group
++-----+---------------------------------+------+
+| 164 | Goodricke 2nd                   | 2015 | a
+| 165 | Wentworth 1st                   | 2015 | a
+| 166 | James 3rd                       | 2015 | a
+| 167 | Vanbrugh 1st                    | 2015 | a
+| 168 | Derwent 3rd                     | 2015 | a
+| 169 | Alcuin 2nd                      | 2015 | a
+| 170 | Langwith 2nd                    | 2015 | b
+| 171 | Derwent 2nd                     | 2015 | b
+| 172 | Halifax 1st                     | 2015 | b
+| 173 | Goodricke 1st                   | 2015 | b
+| 174 | Vanbrugh 3rd                    | 2015 | b
+| 175 | Langwith 3rd/Halifax 3rd/Derwen | 2015 | b
+| 176 | Vanbrugh 2nd                    | 2015 | c
+| 177 | James 2nd                       | 2015 | c
+| 178 | Derwent 5th                     | 2015 | c
+| 179 | Halifax 4th                     | 2015 | c
+| 180 | Langwith 1st                    | 2015 | c
+| 181 | Alcuin 1st                      | 2015 | c
+| 182 | Wentworth 2nd                   | 2015 | d
+| 183 | Halifax 2nd                     | 2015 | d
+| 184 | Constantine 1st                 | 2015 | d
+| 185 | Derwent 1st                     | 2015 | d
+| 186 | James 1st                       | 2015 | d
+| 187 | Alcuin 3rd                      | 2015 | d
++-----+---------------------------------+------+

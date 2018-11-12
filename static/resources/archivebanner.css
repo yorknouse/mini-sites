@@ -1,0 +1,29 @@
+body
+{
+    margin-top: 35px;
+}
+#archivebanner {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fde073;
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden; 
+    white-space: nowrap;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+	font-family: Helmet, FreeSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+
+#archivebannerleft {
+
+	position:absolute;
+	left:0;
+	top:0;
+	margin-left:10px;
+}
